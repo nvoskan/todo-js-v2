@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/main.css">
+        <link rel="shortcut icon" href="./image/leaf2.svg" type="image/svg">
+        <title>ToDo App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="hcont"> 
+                <div class = "header" >ToDo App</div>
+                <div class = "undertext"> Ваш список задач на день</div>
+            </div>
+            <div class="form-border">
+                <div class="title-add">Добавить новую задачу</div>
+                <div class="form-box">
+                    <form id="form">
+                        <div class="">
+                            <input type="text" class="form-control" id="taskInput" placeholder="Текст задачи" required>
+                            <small id="prompt" class="" style="color: rgb(116, 114, 114);">Что делаем, сколько времени тратим, какой результат</small>
+                        </div>
+                        <button id = "addbtn" type="submit" class="addbtn">Добавить</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="listoftasks">
+                <ul id="tasksList" class="list-group">
+                    
+                </ul>
+            </div> 
+        </div>
+        <div class="deldone">
+            <button id="removeDoneTasks" data-action="deletedone">Удалить выполненные задачи</button>
+        </div>
+        <a href = "https://vk.com/id255240871" target="_blank"><img class = "pic" src="./image/ava.png" alt="Страница автора" title="Страница автора"></a>
+        <script src="./index.js"></script>
+    </body>
+</html>
